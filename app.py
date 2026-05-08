@@ -208,7 +208,7 @@ This cell contains the complete code for the Streamlit application `app.py`. The
 # # ── Load data ─────────────────────────────────────────────────
 # @st.cache_data
 # def load_data():
-#     df = pd.read_csv("/content/precomputed_cases.csv", parse_dates=["Date"])
+#     df = pd.read_csv("data/precomputed_cases.csv", parse_dates=["Date"])
 #     return df
 # 
 # df = load_data()
@@ -626,7 +626,7 @@ st.markdown("""
 # ── Load data ─────────────────────────────────────────────────
 @st.cache_data
 def load_data():
-    df = pd.read_csv("precomputed_cases.csv", parse_dates=["Date"])
+    df = pd.read_csv("data/precomputed_cases.csv", parse_dates=["Date"])
     return df
 
 df = load_data()
