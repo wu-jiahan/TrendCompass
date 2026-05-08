@@ -852,7 +852,6 @@ This cell handles the setup and execution of the Streamlit application. It insta
 # ============================================================
 # TrendCompass — Streamlit App
 # Run in Colab:
-!pip install streamlit plotly pandas pyngrok -q
 import time
 from pyngrok import ngrok
 from google.colab import userdata
