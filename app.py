@@ -854,7 +854,6 @@ This cell handles the setup and execution of the Streamlit application. It insta
 # Run in Colab:
 import time
 from pyngrok import ngrok
-from google.colab import userdata
 
 # Configure ngrok with your authtoken from Colab secrets
 NGROK_AUTH_TOKEN = userdata.get('NGROK_AUTH_TOKEN')
