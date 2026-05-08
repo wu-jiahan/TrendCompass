@@ -864,7 +864,6 @@ else:
     print("NGROK_AUTH_TOKEN not found in Colab secrets. Please add it.")
 
 # Start Streamlit in the background and redirect output to a log file
-!streamlit run app.py > streamlit_output.log 2>&1 &
 time.sleep(5) # Give Streamlit some time to start up
 print(ngrok.connect(8501))
 # ============================================================
