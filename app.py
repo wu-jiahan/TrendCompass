@@ -200,12 +200,12 @@ with col_sel:
 
 # ── Filter data ───────────────────────────────────────────────
 kdf = df[df["Keyword"] == selected].copy().sort_values("Date")
-kdf_sentiment = kdf[kdf["Fatigue_Score"].notna()]
+kdf_sentiment = kdf[kdf["Sentiment_Score"].notna()]
 
 # ── Derived metrics ───────────────────────────────────────────
 peak_vol        = int(kdf["Search_Volume"].max())
 peak_date       = kdf.loc[kdf["Search_Volume"].idxmax(), "Date"].strftime("%b %d")
-avg_sentiment   = kdf_sentiment["Fatigue_Score"].mean() if len(kdf_sentiment) > 0 else 0
+avg_sentiment   = kdf_sentiment["Sentiment_Score"].mean() if len(kdf_sentiment) > 0 else 0
 sentiment_label = (
     "Positive 😊" if avg_sentiment > 0.2 else
     "Neutral 😐"  if avg_sentiment > -0.2 else
@@ -255,7 +255,7 @@ if len(kdf_sentiment) > 0:
     fig.add_trace(
         go.Scatter(
             x=kdf_sentiment["Date"],
-            y=kdf_sentiment["Fatigue_Score"],
+            y=kdf_sentiment["Sentiment_Score"],
             name="Fatigue Score",
             mode="lines+markers",
             line=dict(color="#E05B5B", width=2.5),
