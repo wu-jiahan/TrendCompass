@@ -31,4 +31,4 @@ Maslach (1982) Emotional Exhaustion\
 [https://trendcompass-wujiahan.streamlit.app]\
 \
 ## Portfolio Document\
-[ADD PDF LINK AFTER UPLOAD]}
+[https://github.com/wu-jiahan/TrendCompass/blob/main/TrendCompass_Portfolio.pdf]}
