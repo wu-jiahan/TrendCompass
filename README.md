@@ -28,7 +28,7 @@ Rogers (1962) Diffusion of Innovations \'b7 Brehm (1966) Psychological Reactance
 Maslach (1982) Emotional Exhaustion\
 \
 ## Live App\
-[https://trendcompass-wujiahan.streamlit.app]\
+[https://trendcompass-jiahanwu.streamlit.app]\
 \
 ## Portfolio Document\
 [https://github.com/wu-jiahan/TrendCompass/blob/main/TrendCompass_Portfolio.pdf]}
